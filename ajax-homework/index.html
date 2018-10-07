@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Giphy API</title>
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    // Example queryURL for Giphy API
+    var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC";
+
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).then(function (response) {
+      console.log(response);
+      for (var i = 0; i < response.length; i++) {
+        var tableDiv = ("<tr>");
+        var rowDiv = ("<th>");
+        rowDiv.attr(src, "");
+        rowDiv.attr(text, "");
+        rowDiv.attr(data - still, );
+        rowDiv.class();
+        rowDiv.attr("id", );
+        tableDiv.append(rowDiv);
+        tableDiv.append("//id");
+      }
+    });
+  </script>
+
+  <div class="container">
+    <center>
+      <p>
+        <h1>Welcome to the animated gif page!</h1>
+      </p>
+      <table>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </table>
+    </center>
+  </div>
+
+</body>
+
+</html>
