@@ -9,7 +9,6 @@
 <body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
-    // Example queryURL for Giphy API
     var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC";
 
     $.ajax({
@@ -17,18 +16,31 @@
       method: "GET"
     }).then(function (response) {
       console.log(response);
-      for (var i = 0; i < response.length; i++) {
-        var tableDiv = ("<tr>");
-        var rowDiv = ("<th>");
-        rowDiv.attr(src, "");
-        rowDiv.attr(text, "");
-        rowDiv.attr(data - still, );
-        rowDiv.class();
-        rowDiv.attr("id", );
-        tableDiv.append(rowDiv);
-        tableDiv.append("//id");
-      }
+    //   for (var i = 0; i < response.length; i++) {
+    //       var createRow = function(response) {
+    //       var tableDiv = ("<tr>");
+    //       var rowDiv = ("<th>");
+    //       rowDiv.attr(src, "");
+    //       rowDiv.attr(text, "");
+    //       rowDiv.attr(data - still, i);
+    //       rowDiv.class();
+    //       rowDiv.attr("id", i);
+    //       tableDiv.append(rowDiv);
+    //       tableDiv.append("//id");
+    //     }
+    //   }
+    // });
+    $(document).ready(function(){
+        var image = '';
+        $.each(data, function(key, value){
+          image += '<tr>';
+          image += '<th>'+value.embed_url+'<th>';
+          image += '<tr>';
+        });
+        $(table).append(image);
     });
+      
+    }
   </script>
 
   <div class="container">
